@@ -22,7 +22,7 @@ A ROS Package for Respeaker Mic Array
     cd ~/catkin_ws
     source /opt/ros/kinetic/setup.bash
     rosdep install --from-paths src -i -r -n -y
-    catkin config --init
+    catkin config --init                             ## If there is the error like "bash: catkin: command not found", you need to run "sudo apt-get install python-catkin-tools" to install the catkin package.
     catkin build
     source ~/catkin_ws/devel/setup.bash
     ```
